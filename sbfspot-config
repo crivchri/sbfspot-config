@@ -2537,7 +2537,7 @@ do_preflightcheck()
         echo "Upgrade OS or install SBFspot manually following $url_install_wiki"
         exit 1
     else
-        if [[ ! "buster bullseye bookworm" =~ $re_codename ]]; then
+        if [[ ! "buster bullseye bookworm trixie" =~ $re_codename ]]; then
             echo "Unknown OS detected: $lsb_desc"
             echo "Install SBFspot manually following $url_install_wiki"
             exit 1
