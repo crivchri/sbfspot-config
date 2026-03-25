@@ -2592,9 +2592,9 @@ lsb_desc=$(lsb_release -sd)
 lsb_version=$(lsb_release -sr)
 lsb_codename=$(lsb_release -sc)
 
-# use bookwork build for trixie
-if [[ "trixie" = $re_codename ]]; then
-    re_codename="bookworm"
+# use bookworm build for trixie
+if [[ "trixie" = $lsb_codename ]]; then
+    lsb_codename="bookworm"
 fi
 
 do_preflightcheck
