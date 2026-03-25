@@ -2594,7 +2594,7 @@ lsb_codename=$(lsb_release -sc)
 
 # use bookwork build for trixie
 if [[ "trixie" = $re_codename ]]; then
-    $re_codename="bookworm"
+    re_codename="bookworm"
 fi
 
 do_preflightcheck
